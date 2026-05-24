@@ -153,16 +153,10 @@ The interface prioritizes operational readability over visual decoration.
 ## Live Platform
 
 ### Production Preview
-- https://labs.ph3digital.com.br/opscore
+- https://opscore.ph3digital.com.br
 
 ### GitHub Repository
 - https://github.com/PhilipeOliveiraS/opscore-command-center
-
----
-
-## Current Dashboard Preview
-
-![OpsCore Dashboard](docs/assets/dashboard-desktop.png)
 
 ---
 
@@ -212,6 +206,11 @@ D --> H[Predictive Operational Models]
 
 ---
 
+## Current Dashboard Preview
+
+![OpsCore Dashboard](https://raw.githubusercontent.com/PhilipeOliveiraS/opscore-command-center/main/docs/assets/dashboard-desktop.png)
+
+---
 ## Product Evolution
 
 | Version | Objective |
@@ -303,6 +302,7 @@ The platform is designed to evolve into an AI-driven operational decision system
 ### PH3 Digital
 Operational Intelligence • AI Systems • Enterprise Platforms
 
+- https://linkedin.com/in/philipeoliveiras
 - https://ph3digital.com.br
-- https://labs.ph3digital.com.br/opscore
+- https://opscore.ph3digital.com.br
 - https://github.com/PhilipeOliveiraS

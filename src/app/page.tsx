@@ -14,15 +14,23 @@ export default function Dashboard() {
         <main className="flex-1 overflow-auto custom-scrollbar p-6">
           <div className="max-w-[1600px] mx-auto space-y-6">
             <KpiHero />
+
             <div className="grid grid-cols-1 xl:grid-cols-4 gap-6">
+
+              {/* COLUNA ESQUERDA/CENTRO (CenterSection + BottomSection) */}
               <div className="xl:col-span-3 space-y-6">
                 <CenterSection />
                 <BottomSection />
               </div>
-              <div className="xl:col-span-1 h-[824px]">
+
+              {/* COLUNA DIREITA (RightSidebar) - REMOVIDO o h-[824px] */}
+              {/* O "flex flex-col" garante que a RightSidebar entenda a altura total do Grid */}
+              <div className="xl:col-span-1 flex flex-col">
                 <RightSidebar />
               </div>
+
             </div>
+
           </div>
         </main>
       </div>
