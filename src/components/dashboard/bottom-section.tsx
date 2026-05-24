@@ -32,7 +32,7 @@ export function BottomSection() {
               <ActivitySquare className="w-3.5 h-3.5 text-muted-foreground" />
               Índice de Eficiência de Operadores
             </CardTitle>
-            <span className="text-[9px] text-muted-foreground font-semibold uppercase tracking-wider hover:text-foreground cursor-pointer transition-colors flex items-center">Ver Todos <ChevronRight className="w-3 h-3 ml-0.5"/></span>
+            <span className="text-[9px] text-muted-foreground font-semibold uppercase tracking-wider hover:text-foreground cursor-pointer transition-colors flex items-center">Ver Todos <ChevronRight className="w-3 h-3 ml-0.5" /></span>
           </div>
         </CardHeader>
         <CardContent className="p-0">
@@ -79,40 +79,40 @@ export function BottomSection() {
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={efficiencyData} margin={{ top: 0, right: 0, left: -25, bottom: 0 }}>
               <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="hsl(var(--border))" opacity={0.4} />
-              <XAxis 
-                dataKey="name" 
-                fontSize={9} 
+              <XAxis
+                dataKey="name"
+                fontSize={9}
                 fontFamily="monospace"
-                tickLine={false} 
-                axisLine={false} 
-                stroke="hsl(var(--muted-foreground))" 
+                tickLine={false}
+                axisLine={false}
+                stroke="hsl(var(--muted-foreground))"
                 dy={10}
               />
-              <YAxis 
-                fontSize={9} 
+              <YAxis
+                fontSize={9}
                 fontFamily="monospace"
-                tickLine={false} 
-                axisLine={false} 
-                stroke="hsl(var(--muted-foreground))" 
+                tickLine={false}
+                axisLine={false}
+                stroke="hsl(var(--muted-foreground))"
               />
-              <Tooltip 
+              <Tooltip
                 cursor={{ fill: 'hsl(var(--secondary))', opacity: 0.4 }}
-                contentStyle={{ 
-                  backgroundColor: 'hsl(var(--card))', 
-                  borderColor: 'hsl(var(--border))', 
+                contentStyle={{
+                  backgroundColor: 'hsl(var(--card))',
+                  borderColor: 'hsl(var(--border))',
                   borderRadius: '4px',
                   boxShadow: '0 4px 20px rgba(0,0,0,0.5)',
                   fontSize: '11px',
                   fontFamily: 'monospace'
                 }}
                 itemStyle={{ color: 'hsl(var(--foreground))' }}
-                formatter={(value: number) => [`${value}%`, 'Eficiência']}
+                formatter={(value) => [`${value}%`, "Eficiência"]}
               />
               <Bar dataKey="value" radius={[2, 2, 0, 0]} maxBarSize={30}>
                 {efficiencyData.map((entry, index) => (
-                  <Cell 
-                    key={`cell-${index}`} 
-                    fill={entry.value > 85 ? 'hsl(var(--efficiency-green))' : 'hsl(var(--muted-foreground))'} 
+                  <Cell
+                    key={`cell-${index}`}
+                    fill={entry.value > 85 ? 'hsl(var(--efficiency-green))' : 'hsl(var(--muted-foreground))'}
                     fillOpacity={0.8}
                     className="hover:fill-opacity-100 transition-all duration-300 cursor-pointer"
                   />
@@ -148,7 +148,7 @@ export function BottomSection() {
               <span className="text-[9px] text-critical/80 uppercase tracking-widest font-semibold">SLA Violado</span>
             </div>
           </div>
-          
+
           <div className="space-y-2">
             <div className="flex justify-between text-[9px] text-foreground font-mono font-medium">
               <span>Índice de Saúde da Frota</span>
